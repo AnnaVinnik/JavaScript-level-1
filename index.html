@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Script Level 1</title>
-</head>
-<body>
-    <script>
-        var tc = 5;
-        var tf = (9 / 5) * tc + 32;
-        alert(tf);
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Java Script Level 1</title>
+    </head>
+    <body class="body">
+        <h2 class="heading">Введите значение температуры по Цельсию</h2>
+        <input class="input" type="text" id="celsiusTemperature" placeholder="0">
+        <h2 class="heading">
+            Значение температуры по Фарингейту =
+            <span class="result" id="result">32</span>
+        </p>
+        <h2 class="heading"> Name: Василий</h2>
+        <h2 class="heading">
+            Admin:
+            <span id="resultAdmin"></span>
+        </p>
+        <h2 class="heading">
+            1000 + "108":
+            <span id="resultNumber"></span>
+        </p>
+        <script>
+        celsiusTemperature.oninput = function() {
+            var tf = (9 / 5) * celsiusTemperature.value + 32;
+            result.innerHTML = tf;
+        }
 
-    </script>
-    
-</body>
+        var name = 'Василий';
+        var admin = name;
+        resultAdmin.innerHTML = admin;
+        resultNumber.innerHTML = 1000 + "108";
+        </script>
+    </body>
 </html>
