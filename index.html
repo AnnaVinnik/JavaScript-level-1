@@ -8,31 +8,55 @@
         <title>Java Script Level 1</title>
     </head>
     <body class="body">
-        <h2 class="heading">Введите значение температуры по Цельсию</h2>
-        <input class="input" type="text" id="celsiusTemperature" placeholder="0">
-        <h2 class="heading">
-            Значение температуры по Фарингейту =
-            <span class="result" id="result">32</span>
-        </p>
-        <h2 class="heading"> Name: Василий</h2>
-        <h2 class="heading">
-            Admin:
-            <span id="resultAdmin"></span>
-        </p>
-        <h2 class="heading">
-            1000 + "108":
-            <span id="resultNumber"></span>
-        </p>
-        <script>
-        celsiusTemperature.oninput = function() {
-            var tf = (9 / 5) * celsiusTemperature.value + 32;
-            result.innerHTML = tf;
-        }
-
-        var name = 'Василий';
-        var admin = name;
-        resultAdmin.innerHTML = admin;
-        resultNumber.innerHTML = 1000 + "108";
-        </script>
+        <div class="first-lesson">
+            <h1>Первый урок</h1>
+            <h2 class="heading">Введите значение температуры по Цельсию</h2>
+            <input
+                class="input"
+                type="text"
+                id="celsiusTemperature"
+                placeholder="0"
+            >
+            <h2 class="heading">
+                Значение температуры по Фарингейту =
+                <span class="result" id="result">32</span>
+            </p>
+            <h2 class="heading"> Name: Василий</h2>
+            <h2 class="heading">
+                Admin:
+                <span id="resultAdmin"></span>
+            </p>
+            <h2 class="heading">
+                1000 + "108":
+                <span id="resultNumber"></span>
+            </p>
+            <script>
+            celsiusTemperature.oninput = function() {
+                var tf = (9 / 5) * celsiusTemperature.value + 32;
+                result.innerHTML = tf;
+            }
+    
+            var name = 'Василий';
+            var admin = name;
+            resultAdmin.innerHTML = admin;
+            resultNumber.innerHTML = 1000 + "108";
+            </script>
+        </div>
+        <div class="second-lesson">
+            <h1>Второй урок</h1>
+            <h2 class="heading">Задание 1</h2>
+            <div class="text">
+                <span class="heading">
+                    var a = 1, b = 1, c, d; <br>
+                    c = ++a; alert(c);  
+                </span>         // 2 ( в этом случае первым происходит увеличение значения <span class="heading">a</span> на единицу, и это значение возвращается оператором декремента, и присваивается переменной <span class="heading">с</span>) <br>
+                <span class="heading">d = b++; alert(d);</span>           // 1 (здесь сначала переменная <span class="heading">b</span> копируется в переменную <span class="heading">d</span> , а потом происходит увеличение переменной <span class="heading">b</span>) <br>
+                <span class="heading">c = (2+ ++a); alert(c); </span>     // 5 (сначала значение переменной <span class="heading">a </span>увеличивается и увеличенное значение возвращается для прибавление к двойки и присваивания в переменную <span class="heading">с</span>) <br>
+                <span class="heading">d = (2+ b++); alert(d); </span>     // 4 (сначала  оператор декремента возвращает исходное значение переменной <span class="heading">b</span> и только потом сама переменная увеличивается, таким образом к двойке прибавляется исходное значение переменной<span class="heading"> b</span> ) <br>
+                <span class="heading">alert(a);</span>                    // 3 (переменная <span class="heading">а</span> увеличилась на два, так как дважды был вызван оператор декремента) <br>
+                <span class="heading">alert(b);</span>                    // 3 (переменная<span class="heading"> b</span> увеличилась на два, так как дважды был вызван оператор декремента)
+        </div>
+        <h2>Заданик 2</h2>
+        <div class="text">x = 5</div>
     </body>
 </html>
